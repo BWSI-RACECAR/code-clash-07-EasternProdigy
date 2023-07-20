@@ -34,19 +34,18 @@ Input: xO Output: False
 
 class Solution:
     def count_XO(self, string):
-           string = string.upper()
-           num_x = 0
-           num_o = 0
-           for i in range(0, len(string)):
+        num_x = 0
+        num_o = 0
+        for i in range(0, len(string)):
             if string[i] == "X":
                 num_x += 1
-            elif string[i] == "0":
+            elif string[i] == "O":
                 num_o += 1
 
-            if num_x == num_o:
-                return True
-            else:
-                return False
+        if num_x == num_o:
+            return True
+        else:
+            return False
                 
 def main():
     input1=input()
