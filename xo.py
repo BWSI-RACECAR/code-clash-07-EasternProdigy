@@ -38,7 +38,7 @@ class Solution:
            num_x = 0
            num_o = 0
            for i in range(0, len(string)):
-            if string[i] == "X"
+            if string[i] == "X":
                 num_x += 1
             elif string[i] == "0":
                 num_o += 1
